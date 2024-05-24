@@ -5,6 +5,7 @@ metadata:
   namespace: fleet-default
 spec:
   repo: ssh://git@git-ssh.atoy.lol/home/kyverno.git
+  branch: main
   clientSecretName: private-key
   targets:
   - name: kyverno
