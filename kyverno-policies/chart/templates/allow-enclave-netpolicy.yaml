@@ -17,7 +17,7 @@ metadata:
       named `default-deny` which will deny all traffic anytime a new Namespace is created.      
 spec:
   rules:
-  - name: default-deny
+  - name: allow-enclave-netpolicy
     match:
       any:
       - resources:
