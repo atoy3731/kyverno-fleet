@@ -1,0 +1,13 @@
+defaultNamespace: kyverno
+
+labels:
+  app: kyverno-policies
+
+helm:
+  chart: ./chart
+  releaseName: kyverno-policies
+
+dependsOn:
+  - selector:
+      matchLabels:
+        app: kyverno

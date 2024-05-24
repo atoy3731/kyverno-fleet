@@ -1,0 +1,16 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: kyverno
+  namespace: fleet-default
+spec:
+  repo: ssh://git@git-ssh.atoy.lol/home/kyverno.git
+  clientSecretName: private-key
+  targets:
+  - name: kyverno
+    clusterSelector:
+      matchLabels:
+        kyverno: enabled
+  paths:
+  - "./kyverno"
+  - "./kyverno-policies"

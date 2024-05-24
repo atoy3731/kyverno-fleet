@@ -1,0 +1,10 @@
+defaultNamespace: kyverno
+
+labels:
+  app: kyverno
+
+helm:
+  repo: https://kyverno.github.io/kyverno/
+  chart: kyverno
+  version: 3.2.3
+  releaseName: kyverno
