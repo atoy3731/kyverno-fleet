@@ -43,8 +43,8 @@ spec:
             - namespaceSelector:
                 matchLabels:
                   enclave: "{{`{{ request.object.metadata.labels.enclave }}`}}"
-          egress:
-          - to:
-            - namespaceSelector:
-                matchLabels:
-                  enclave: "{{`{{ request.object.metadata.labels.enclave }}`}}"
+          # egress:
+          # - to:
+          #   - namespaceSelector:
+          #       matchLabels:
+          #         enclave: "{{`{{ request.object.metadata.labels.enclave }}`}}"
